@@ -14,12 +14,5 @@
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
-<<<<<<< HEAD
-=======
-  },
-  "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
->>>>>>> 2897edf5f6139e941884852c19a11340eb9d1a5a
   }
 }

@@ -26,19 +26,18 @@ export default function Home(props) {
     <>
       <div className={styles.container}>
         <Head>
-          <title>CryptoBitPunk Coin Tracker</title>
+          <title>CryptoBitpunk Coin Tracker</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <h1>CryptoBitpunk Coin Tracker</h1>
-        <h6>Top 100 Market Cap Coins Developed by non-fungi.com utilizing the Coingecko API</h6>
+        <h6>Top 100 Market Cap Coins by non-fungi.com utilizing the Coingecko API</h6>
 
         <table className='table table-dark table-striped text-info'>
           <thead>
             <tr>
               <th>Symbol</th>
-              <th>24hr +/- %</th>
-              <th>24hr +/- $</th>
+              <th>24h %</th>
               <th>Current Price</th>
               <th>All Time High</th>
               <th>Market Cap</th>
@@ -61,17 +60,8 @@ export default function Home(props) {
                     {formatPercent(coin.price_change_percentage_24h)}
                   </span>
                 </td>
-                <td>
-                  <span
-                    className={coin.price_change_24h > 0 ? (
-                      'text-success'
-                    ) : 'text-danger'}
-                  >
-                    {formatDollar(coin.price_change_24h)}
-                  </span>
-                </td>
                 <td>{formatDollar(coin.current_price, 20)}</td>
-                <td>{formatDollar(coin.ath, 12)}</td>
+                <td>{formatDollar(coin.ath, 6)}</td>
                 <td>{formatDollar(coin.market_cap, 12)}</td>
               </tr>
             ))}

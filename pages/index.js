@@ -36,11 +36,11 @@ export default function Home(props) {
         <table className='table table-dark table-striped text-info'>
           <thead>
             <tr>
-              <th>Symbol</th>
-              <th>24h %</th>
-              <th>Current Price</th>
-              <th>All Time High</th>
-              <th>Market Cap</th>
+              <th>Crypto <button className='btn btn-sm btn-outline-warning'>↕</button></th>
+              <th>24h % <button className='btn btn-sm btn-outline-warning'>↕</button></th>
+              <th>Current💲</th>
+              <th>ATH⚡</th>
+              <th>Market Cap <button className='btn btn-sm btn-outline-warning'>↕</button></th>
             </tr>
           </thead>
           <tbody>

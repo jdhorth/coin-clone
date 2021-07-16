@@ -2,12 +2,12 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CoinGecko from 'coingecko-api'
 
+
 const coinGeckoClient = new CoinGecko();
 
 
 export default function Home(props) {
-  const { data } = props.result;
-  console.log(data)
+  const { data } = props.result
 
   const formatPercent = number =>
     `${new Number(number).toFixed(2)}%`
@@ -50,9 +50,7 @@ export default function Home(props) {
                 <td>
                   <img
                     src={coin.image}
-                    style={{ width: 25, height: 25, marginRight: 10 }}
-                    alt={'logo'}
-                  />
+                    style={{ width: 25, height: 25, marginRight: 10 }} />
                   {coin.symbol.toUpperCase()}</td>
                 <td>
                   <span

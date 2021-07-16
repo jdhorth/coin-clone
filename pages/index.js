@@ -31,9 +31,9 @@ export default function Home(props) {
         </Head>
 
         <h1>CryptoBitpunk Coin Tracker</h1>
-        <h6>Top 100 powered by CoinGecko API, Next js, Vercel, developed by non-fungi.com</h6>
+        <h6>Top 100 Market Cap Coins Developed by non-fungi.com utilizing the Coingecko API</h6>
 
-        <table className='table bg-dark text-info'>
+        <table className='table table-dark table-striped text-info'>
           <thead>
             <tr>
               <th>Symbol</th>
@@ -79,7 +79,7 @@ export default function Home(props) {
         </table>
 
         <h1>CryptoBitpunk</h1>
-        <h6>Realtime updated stats powered by CoinGecko API, Next js, Vercel, developed by non-fungi.com</h6>
+        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> with eattheblocks crypto dashboard</h6>
 
       </div>
     </>

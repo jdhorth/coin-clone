@@ -36,8 +36,9 @@ export default function Home(props) {
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
             <tr>
-              <th>Crypto 🔀</th>
-              <th>24h % 🔀</th>
+              <th>Crypto Symbol🔀</th>
+              <th>Name🤷‍♂️</th>
+              <th>24h %🔀</th>
               <th>Current💲</th>
               <th>ATH⚡</th>
               <th>Market Cap🧢</th>
@@ -51,6 +52,7 @@ export default function Home(props) {
                     src={coin.image}
                     style={{ width: 25, height: 25, marginRight: 10 }} />
                   {coin.symbol.toUpperCase()}</td>
+                <td>{coin.name}</td>
                 <td>
                   <span
                     className={coin.price_change_percentage_24h > 0 ? (

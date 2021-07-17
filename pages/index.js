@@ -31,7 +31,7 @@ export default function Home(props) {
         </Head>
 
         <h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1>
-        <h6>Top 100 Market Cap Coins by non-fungi.com utilizing the Coingecko API</h6>
+        <h6>Top 100 <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Crypto Currency Coins</a> by Market Cap. Coingecko API. <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Buy on Coinbase</a></h6>
 
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
@@ -73,7 +73,7 @@ export default function Home(props) {
         </table>
 
         <h1>CryptoBitpunk.com</h1>
-        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> with EatTheBlocks crypto dashboard</h6>
+        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API and EatTheBlocks crypto dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6>
 
       </div>
     </>

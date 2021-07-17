@@ -42,6 +42,7 @@ export default function Home(props) {
               <th>Current💲</th>
               <th>ATH⚡</th>
               <th>Market Cap🧢</th>
+              <th>Cap Rank🔥</th>
             </tr>
           </thead>
           <tbody>
@@ -65,6 +66,7 @@ export default function Home(props) {
                 <td>{formatDollar(coin.current_price, 20)}</td>
                 <td>{formatDollar(coin.ath, 6)}</td>
                 <td>{formatDollar(coin.market_cap, 12)}</td>
+                <td>{coin.market_cap_rank}</td>
               </tr>
             ))}
           </tbody>

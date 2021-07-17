@@ -49,4 +49,3 @@ if (process.browser) {
     })
 }
 
-export default sortTableByColumn;

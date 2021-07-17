@@ -5,9 +5,13 @@ import CoinGecko from 'coingecko-api'
 
 const coinGeckoClient = new CoinGecko();
 
-
 export default function Home(props) {
   const { data } = props.result
+  // const log = console.log;
+  console.log(data)
+  // log(data.sort(byChange));
+
+  // data.sort((a, b) => b.price_change_percentage_24h - a.price_change_percentage_24h)
 
   const formatPercent = number =>
     `${new Number(number).toFixed(2)}%`
@@ -22,7 +26,19 @@ export default function Home(props) {
       })
       .format(number);
 
+  // function byChange(a, b) {
+  //   if (b.price_change_percentage_24h > a.price_change_percentage_24h) {
+  //     return 1;
+  //   } else if (a.price_change_percentage_24h > b.price_change_percentage_24h) {
+  //     return -1;
+  //   } else {
+  //     return 0;
+  //   }
+  // }
+
   return (
+
+
     <>
       <div className={styles.container}>
         <Head>
@@ -33,7 +49,7 @@ export default function Home(props) {
         <h1>CryptoBitpunk Coin Tracker</h1>
         <h6>Top 100 Market Cap Coins by non-fungi.com utilizing the Coingecko API</h6>
 
-        <table className='table table-dark table-striped text-info'>
+        <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
             <tr>
               <th>Crypto <button className='btn btn-sm btn-outline-warning'>↕</button></th>

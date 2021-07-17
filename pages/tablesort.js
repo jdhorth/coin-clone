@@ -15,8 +15,6 @@ function sortTableByColumn(table, column, asc = true) {
     const sortedRows = rows.sort((a, b) => {
         const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
         const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
-        console.log(aColText);
-        console.log(bColText);
 
         return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
     });
@@ -36,16 +34,18 @@ function sortTableByColumn(table, column, asc = true) {
 
 
 
-}
+};
 
 // sortTableByColumn(document.querySelector("table"), 1, false);
 
-document.querySelectorAll(".table-sortable th").forEach(headerCell => {
-    headerCell.addEventListener("click", () => {
-        const tableElement = headerCell.closest('.table');
-        const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-        const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+if (typeof window === 'object') {
+    document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+        headerCell.addEventListener("click", () => {
+            const tableElement = headerCell.closest('.table');
+            const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+            const currentIsAscending = headerCell.classList.contains("th-sort-asc");
 
-        sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-    });
-})
+            sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+        });
+    })
+}

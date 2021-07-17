@@ -8,8 +8,6 @@ const coinGeckoClient = new CoinGecko();
 export default function Home(props) {
   const { data } = props.result
 
-  // data.sort((a, b) => b.price_change_percentage_24h - a.price_change_percentage_24h)
-
   const formatPercent = number =>
     `${new Number(number).toFixed(2)}%`
 
@@ -70,7 +68,7 @@ export default function Home(props) {
           </tbody>
         </table>
 
-        <h1>CryptoBitpunk</h1>
+        <h1>CryptoBitpunk.com</h1>
         <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> with EatTheBlocks crypto dashboard</h6>
 
       </div>

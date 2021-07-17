@@ -28,11 +28,11 @@ export default function Home(props) {
     <>
       <div className={styles.container}>
         <Head>
-          <title>CryptoBitpunk Coin Tracker</title>
+          <title>CryptoBitpunk Coin Tracker 🕵️‍♂️</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <h1>CryptoBitpunk Coin Tracker</h1>
+        <h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1>
         <h6>Top 100 Market Cap Coins by non-fungi.com utilizing the Coingecko API</h6>
 
         <table className='table table-dark table-striped text-info table-sortable'>
@@ -42,7 +42,7 @@ export default function Home(props) {
               <th>24h % 🔀</th>
               <th>Current💲</th>
               <th>ATH⚡</th>
-              <th>Market Cap</th>
+              <th>Market Cap🧢</th>
             </tr>
           </thead>
           <tbody>
@@ -99,15 +99,19 @@ export async function getServerSideProps(context) {
  */
 
 function sortTableByColumn(table, column, asc = true) {
-  const dirModifier = asc ? 1 : -1;
+  const dirModifier = asc ? -1 : 1;
   const tBody = table.tBodies[0];
   const rows = Array.from(tBody.querySelectorAll("tr"));
 
   // sort each row
   const sortedRows = rows.sort((a, b) => {
-    const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
-    const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+    let aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+    let bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
+    if (!isNaN(parseFloat(aColText)) && !isNaN(parseFloat(bColText))) {
+      aColText = parseFloat(aColText)
+      bColText = parseFloat(bColText)
+    }
     return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
   });
 
@@ -119,7 +123,7 @@ function sortTableByColumn(table, column, asc = true) {
   // Re-add the newly sorted rows
   tBody.append(...sortedRows);
 
-  // remember how the coumn currently sorted
+  // remember how the column currently sorted
   table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
   table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-asc", asc);
   table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-desc", !asc);

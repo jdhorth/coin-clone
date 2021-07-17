@@ -36,7 +36,6 @@ function sortTableByColumn(table, column, asc = true) {
 
 };
 
-// sortTableByColumn(document.querySelector("table"), 1, false);
 
 if (typeof window === 'object') {
     document.querySelectorAll(".table-sortable th").forEach(headerCell => {
@@ -49,3 +48,5 @@ if (typeof window === 'object') {
         });
     })
 }
+
+export default sortTableByColumn;

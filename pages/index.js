@@ -38,11 +38,11 @@ export default function Home(props) {
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
             <tr>
-              <th>Crypto <button className='btn btn-sm btn-outline-warning'>↕</button></th>
-              <th>24h % <button className='btn btn-sm btn-outline-warning'>↕</button></th>
+              <th>Crypto 🔀</th>
+              <th>24h % 🔀</th>
               <th>Current💲</th>
               <th>ATH⚡</th>
-              <th>Market Cap <button className='btn btn-sm btn-outline-warning'>↕</button></th>
+              <th>Market Cap</th>
             </tr>
           </thead>
           <tbody>
@@ -121,7 +121,7 @@ function sortTableByColumn(table, column, asc = true) {
 };
 
 
-if (process.browser) {
+if (typeof window === 'object') {
   document.querySelectorAll(".table-sortable th").forEach(headerCell => {
     headerCell.addEventListener("click", () => {
       const tableElement = headerCell.closest('.table');

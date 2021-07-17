@@ -16,6 +16,7 @@ a {
 }
 .table-sortable th {
   cursor: pointer;
+  content: "\25b4";
 }
 
 .table-sortable .th-sort-asc::after {

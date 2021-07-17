@@ -71,7 +71,7 @@ export default function Home(props) {
         </table>
 
         <h1>CryptoBitpunk</h1>
-        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> with eattheblocks crypto dashboard</h6>
+        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> with EatTheBlocks crypto dashboard</h6>
 
       </div>
     </>
@@ -89,6 +89,14 @@ export async function getServerSideProps(context) {
     }
   };
 }
+
+/**
+ *  Sorts a HTML table
+ * 
+ * @param {HTMLTableElement} table to sort
+ * @param {number} the index of the column to sort
+ * @param {boolean} asc sets the ascending order
+ */
 
 function sortTableByColumn(table, column, asc = true) {
   const dirModifier = asc ? 1 : -1;
@@ -120,6 +128,7 @@ function sortTableByColumn(table, column, asc = true) {
 
 };
 
+// wrapped in this if to prevent server side document build fail
 
 if (typeof window === 'object') {
   document.querySelectorAll(".table-sortable th").forEach(headerCell => {

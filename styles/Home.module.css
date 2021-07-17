@@ -1,5 +1,5 @@
  .container {
-  padding: 0;
+  padding: 0 0.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 

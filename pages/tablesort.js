@@ -37,7 +37,7 @@ function sortTableByColumn(table, column, asc = true) {
 };
 
 
-if (typeof window === 'object') {
+if (process.browser) {
     document.querySelectorAll(".table-sortable th").forEach(headerCell => {
         headerCell.addEventListener("click", () => {
             const tableElement = headerCell.closest('.table');

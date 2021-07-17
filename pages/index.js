@@ -7,9 +7,6 @@ const coinGeckoClient = new CoinGecko();
 
 export default function Home(props) {
   const { data } = props.result
-  // const log = console.log;
-  console.log(data)
-  // log(data.sort(byChange));
 
   // data.sort((a, b) => b.price_change_percentage_24h - a.price_change_percentage_24h)
 
@@ -26,18 +23,7 @@ export default function Home(props) {
       })
       .format(number);
 
-  // function byChange(a, b) {
-  //   if (b.price_change_percentage_24h > a.price_change_percentage_24h) {
-  //     return 1;
-  //   } else if (a.price_change_percentage_24h > b.price_change_percentage_24h) {
-  //     return -1;
-  //   } else {
-  //     return 0;
-  //   }
-  // }
-
   return (
-
 
     <>
       <div className={styles.container}>

@@ -30,8 +30,8 @@ export default function Home(props) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1>
-        <h6>Top 100 <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Crypto Currency Coins</a> by Market Cap. Coingecko API. <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Buy on Coinbase</a></h6>
+        <a href="/" className='text-decoration-none'><h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1></a>
+        <h6>Top 100 <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Crypto Currency Coins</a> by Market Cap. Coingecko API. <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Buy on Coinbase</a> <a href="/exchanges"><button className='btn btn-sm btn-info'>Exchanges</button></a></h6>
 
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>

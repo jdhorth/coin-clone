@@ -35,7 +35,7 @@ export default function Home(props) {
 
 
                 <a href="/" className='text-decoration-none'><h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1></a>
-                <h6>Top 💯 <a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://www.coingecko.com/en"><button className='btn btn-sm btn-info'>Coingecko API</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="/"><button className='btn btn-sm btn-info'>Top 100</button></a></h6>
+                <h6>Top 💯 <a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://www.coingecko.com/en"><button className='btn btn-sm btn-info'>Coingecko</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="/"><button className='btn btn-sm btn-info'>Top 100</button></a></h6>
 
 
 

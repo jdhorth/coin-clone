@@ -31,18 +31,17 @@ export default function Home(props) {
         </Head>
 
         <a href="/" className='text-decoration-none'><h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1></a>
-        <h6>Top 100 <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Crypto Currency Coins</a> by Market Cap. Coingecko API. <a href="https://www.coinbase.com/join/horth_0k" target="_blank">Buy on Coinbase</a> <a href="/exchanges"><button className='btn btn-sm btn-info'>Exchanges</button></a></h6>
+        <h6>Top 💯 <a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://www.coingecko.com/en"><button className='btn btn-sm btn-info'>Coingecko API</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="/exchanges"><button className='btn btn-sm btn-info'>All Exchanges</button></a></h6>
 
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
             <tr>
               <th>Crypto Symbol🔀</th>
               <th>Name🤷‍♂️</th>
-              <th>24h %🔀</th>
+              <th>24 hour %🔀</th>
               <th>Current💲</th>
               <th>ATH⚡</th>
-              <th>Market Cap🧢</th>
-              <th>Cap Rank🔥</th>
+              <th>🧢 Rank🔥</th>
             </tr>
           </thead>
           <tbody>
@@ -65,7 +64,6 @@ export default function Home(props) {
                 </td>
                 <td>{formatDollar(coin.current_price, 20)}</td>
                 <td>{formatDollar(coin.ath, 6)}</td>
-                <td>{formatDollar(coin.market_cap, 12)}</td>
                 <td>{coin.market_cap_rank}</td>
               </tr>
             ))}
@@ -73,7 +71,7 @@ export default function Home(props) {
         </table>
 
         <h1>CryptoBitpunk.com</h1>
-        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API and EatTheBlocks crypto dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6>
+        <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API and EatTheBlocks crypto dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6> <a href="#">🔼Top🔼</a>
 
       </div>
     </>

@@ -68,8 +68,8 @@ export default function Home(props) {
                     </tbody>
                 </table>
 
-                <h1>CryptoBitpunk.com</h1>
-                <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API and EatTheBlocks crypto dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6> <a href="#">🔼Top🔼</a>
+                <h1>CryptoBitpunk</h1>
+                <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API and <a href="https://youtu.be/klFeYge2G0I">EatTheBlocks</a> crypto dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6> <a href="#">🔼Top🔼</a>
 
             </div>
         </>

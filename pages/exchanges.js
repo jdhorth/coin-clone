@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import CoinGecko from 'coingecko-api'
 const coinGeckoClient = new CoinGecko();
 
+// thanks to eattheblocks on youtube
 
 export default function Home(props) {
     const { data } = props.result
@@ -91,7 +92,7 @@ export async function getServerSideProps(context) {
 }
 
 /**
- *  Sorts a HTML table
+ *  Sorts a HTML table thanks to dcode on youtube
  * 
  * @param {HTMLTableElement} table to sort
  * @param {number} the index of the column to sort

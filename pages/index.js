@@ -31,7 +31,7 @@ export default function Home(props) {
         </Head>
 
         <a href="/" className='text-decoration-none'><h1>🦎 CryptoBitpunk Coin Tracker 🕵️‍♂️</h1></a>
-        <h6>Top 💯 <a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://www.coingecko.com/en"><button className='btn btn-sm btn-info'>Coingecko</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="/exchanges"><button className='btn btn-sm btn-info'>All Exchanges</button></a></h6>
+        <h6><a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://www.coingecko.com/en"><button className='btn btn-sm btn-info'>Coingecko</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="https://join.robinhood.com/justinh7759"><button className='btn btn-sm btn-info'>Robinhood</button></a> <a href="/exchanges"><button className='btn btn-sm btn-info'>Exchanges</button></a></h6>
 
         <table className='table table-dark table-striped text-info table-sortable'>
           <thead>
@@ -71,6 +71,7 @@ export default function Home(props) {
         </table>
 
         <h1>CryptoBitpunk</h1>
+        <h5><a href="https://www.kucoin.com/ucenter/signup?rcode=rJXT7LT" target="_blank"><button className='btn btn-sm btn-info'>KuCoin</button></a> <a href="https://join.robinhood.com/justinh7759"><button className='btn btn-sm btn-info'>Robinhood</button></a> <a href="https://www.coinbase.com/join/horth_0k" target="_blank"><button className='btn btn-sm btn-info'>Coinbase</button></a> <a href="/exchanges"><button className='btn btn-sm btn-info'>Exchanges</button></a></h5>
         <h6>Developed by <a href="https://non-fungi.com">non-fungi.com</a> Coingecko API w <a href="https://youtu.be/klFeYge2G0I">EatTheBlocks</a> Crypto Dashboard <a href="https://non-fungi.com/posts/donate" target="_blank">Donate</a></h6> <a href="#">🔼Top🔼</a>
 
       </div>
